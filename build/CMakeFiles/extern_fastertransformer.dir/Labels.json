@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/gongenlei/fast_tr/PaddleNLP/paddlenlp/ops/build/CMakeFiles/extern_fastertransformer"
+		},
+		{
+			"file" : "/gongenlei/fast_tr/PaddleNLP/paddlenlp/ops/build/CMakeFiles/extern_fastertransformer.rule"
+		},
+		{
+			"file" : "/gongenlei/fast_tr/PaddleNLP/paddlenlp/ops/build/CMakeFiles/extern_fastertransformer-complete.rule"
+		},
+		{
+			"file" : "/gongenlei/fast_tr/PaddleNLP/paddlenlp/ops/build/third-party/src/extern_fastertransformer-stamp/extern_fastertransformer-install.rule"
+		},
+		{
+			"file" : "/gongenlei/fast_tr/PaddleNLP/paddlenlp/ops/build/third-party/src/extern_fastertransformer-stamp/extern_fastertransformer-mkdir.rule"
+		},
+		{
+			"file" : "/gongenlei/fast_tr/PaddleNLP/paddlenlp/ops/build/third-party/src/extern_fastertransformer-stamp/extern_fastertransformer-download.rule"
+		},
+		{
+			"file" : "/gongenlei/fast_tr/PaddleNLP/paddlenlp/ops/build/third-party/src/extern_fastertransformer-stamp/extern_fastertransformer-update.rule"
+		},
+		{
+			"file" : "/gongenlei/fast_tr/PaddleNLP/paddlenlp/ops/build/third-party/src/extern_fastertransformer-stamp/extern_fastertransformer-patch.rule"
+		},
+		{
+			"file" : "/gongenlei/fast_tr/PaddleNLP/paddlenlp/ops/build/third-party/src/extern_fastertransformer-stamp/extern_fastertransformer-configure.rule"
+		},
+		{
+			"file" : "/gongenlei/fast_tr/PaddleNLP/paddlenlp/ops/build/third-party/src/extern_fastertransformer-stamp/extern_fastertransformer-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"extern_fastertransformer"
+		],
+		"name" : "extern_fastertransformer"
+	}
+}

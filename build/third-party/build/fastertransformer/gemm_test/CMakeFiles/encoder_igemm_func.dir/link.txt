@@ -1,0 +1,2 @@
+/usr/local/bin/ar qc ../../lib/libencoder_igemm_func.a  CMakeFiles/encoder_igemm_func.dir/encoder_igemm_func.cc.o
+/usr/local/bin/ranlib ../../lib/libencoder_igemm_func.a

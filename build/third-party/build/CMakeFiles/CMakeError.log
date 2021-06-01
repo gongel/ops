@@ -1,0 +1,67 @@
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /gongenlei/fast_tr/PaddleNLP/paddlenlp/ops/build/third-party/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9141b/fast && make[3]: Entering directory '/gongenlei/fast_tr/PaddleNLP/paddlenlp/ops/build/third-party/build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_9141b.dir/build.make CMakeFiles/cmTC_9141b.dir/build
+make[4]: Entering directory '/gongenlei/fast_tr/PaddleNLP/paddlenlp/ops/build/third-party/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9141b.dir/src.cxx.o
+/usr/local/gcc-8.2/bin/c++    -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_9141b.dir/src.cxx.o -c /gongenlei/fast_tr/PaddleNLP/paddlenlp/ops/build/third-party/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_9141b
+/home/cmake-3.16.0-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9141b.dir/link.txt --verbose=1
+/usr/local/gcc-8.2/bin/c++   -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_9141b.dir/src.cxx.o  -o cmTC_9141b 
+CMakeFiles/cmTC_9141b.dir/src.cxx.o: In function `main':
+src.cxx:(.text+0x2d): undefined reference to `pthread_create'
+src.cxx:(.text+0x39): undefined reference to `pthread_detach'
+src.cxx:(.text+0x4a): undefined reference to `pthread_join'
+src.cxx:(.text+0x5e): undefined reference to `pthread_atfork'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_9141b.dir/build.make:86: recipe for target 'cmTC_9141b' failed
+make[4]: *** [cmTC_9141b] Error 1
+make[4]: Leaving directory '/gongenlei/fast_tr/PaddleNLP/paddlenlp/ops/build/third-party/build/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_9141b/fast' failed
+make[3]: *** [cmTC_9141b/fast] Error 2
+make[3]: Leaving directory '/gongenlei/fast_tr/PaddleNLP/paddlenlp/ops/build/third-party/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /gongenlei/fast_tr/PaddleNLP/paddlenlp/ops/build/third-party/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_243e2/fast && make[3]: Entering directory '/gongenlei/fast_tr/PaddleNLP/paddlenlp/ops/build/third-party/build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_243e2.dir/build.make CMakeFiles/cmTC_243e2.dir/build
+make[4]: Entering directory '/gongenlei/fast_tr/PaddleNLP/paddlenlp/ops/build/third-party/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_243e2.dir/CheckFunctionExists.cxx.o
+/usr/local/gcc-8.2/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_243e2.dir/CheckFunctionExists.cxx.o -c /gongenlei/fast_tr/PaddleNLP/paddlenlp/ops/build/third-party/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_243e2
+/home/cmake-3.16.0-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_243e2.dir/link.txt --verbose=1
+/usr/local/gcc-8.2/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_243e2.dir/CheckFunctionExists.cxx.o  -o cmTC_243e2  -lpthreads 
+/usr/local/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_243e2.dir/build.make:86: recipe for target 'cmTC_243e2' failed
+make[4]: *** [cmTC_243e2] Error 1
+make[4]: Leaving directory '/gongenlei/fast_tr/PaddleNLP/paddlenlp/ops/build/third-party/build/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_243e2/fast' failed
+make[3]: *** [cmTC_243e2/fast] Error 2
+make[3]: Leaving directory '/gongenlei/fast_tr/PaddleNLP/paddlenlp/ops/build/third-party/build/CMakeFiles/CMakeTmp'
+
+
+

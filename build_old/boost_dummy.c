@@ -1,0 +1,1 @@
+const char *dummy = "/gongenlei/fast_tr/PaddleNLP/paddlenlp/ops/build/boost_dummy.c";

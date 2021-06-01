@@ -1,0 +1,8 @@
+/gongenlei/fast_tr/PaddleNLP/paddlenlp/ops/build/CMakeFiles/rebuild_cache.dir
+/gongenlei/fast_tr/PaddleNLP/paddlenlp/ops/build/CMakeFiles/extern_boost.dir
+/gongenlei/fast_tr/PaddleNLP/paddlenlp/ops/build/CMakeFiles/extern_fastertransformer.dir
+/gongenlei/fast_tr/PaddleNLP/paddlenlp/ops/build/CMakeFiles/boost.dir
+/gongenlei/fast_tr/PaddleNLP/paddlenlp/ops/build/CMakeFiles/edit_cache.dir
+/gongenlei/fast_tr/PaddleNLP/paddlenlp/ops/build/src/CMakeFiles/rebuild_cache.dir
+/gongenlei/fast_tr/PaddleNLP/paddlenlp/ops/build/src/CMakeFiles/edit_cache.dir
+/gongenlei/fast_tr/PaddleNLP/paddlenlp/ops/build/src/CMakeFiles/decoder_op.dir

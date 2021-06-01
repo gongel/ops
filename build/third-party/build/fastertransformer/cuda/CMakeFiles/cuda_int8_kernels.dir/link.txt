@@ -1,0 +1,3 @@
+/usr/local/bin/ar qc ../../lib/libcuda_int8_kernels.a  CMakeFiles/cuda_int8_kernels.dir/cuda_int8_kernels.cu.o
+/usr/local/bin/ar q  ../../lib/libcuda_int8_kernels.a  CMakeFiles/cuda_int8_kernels.dir/cmake_device_link.o
+/usr/local/bin/ranlib ../../lib/libcuda_int8_kernels.a
